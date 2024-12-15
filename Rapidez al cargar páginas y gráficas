@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Sitio Rápido</title>
+    <!-- Enlace a CSS comprimido -->
+    <link rel="stylesheet" href="styles.min.css">
+</head>
+<body>
+
+<header>
+    <h1>Bienvenido a nuestro sitio</h1>
+</header>
+
+<main>
+    <!-- Imagen optimizada con lazy loading -->
+    <img src="image.jpg" alt="Imagen optimizada" loading="lazy">
+    
+    <!-- Gráfico optimizado en SVG -->
+    <svg width="200" height="200">
+        <circle cx="100" cy="100" r="80" stroke="black" stroke-width="2" fill="blue"/>
+    </svg>
+</main>
+
+<!-- Script cargado de forma diferida -->
+<script src="scripts.min.js" defer></script>
+</body>
+</html>
