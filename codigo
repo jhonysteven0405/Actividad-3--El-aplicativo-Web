@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Recursos Tecnológicos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Gestión de Recursos Tecnológicos en Laboratorios</h1>
+        <nav>
+            <ul>
+                <li><a href="#dashboard">Dashboard</a></li>
+                <li><a href="#recursos">Recursos</a></li>
+                <li><a href="#usuarios">Usuarios</a></li>
+                <li><a href="#reportes">Reportes</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="dashboard">
+            <h2>Panel de Control</h2>
+            <p>Bienvenido al sistema de gestión de recursos tecnológicos. Selecciona una opción del menú para comenzar.</p>
+        </section>
+
+        <section id="recursos">
+            <h2>Gestión de Recursos</h2>
+            <form id="recurso-form">
+                <label for="nombre-recurso">Nombre del recurso:</label>
+                <input type="text" id="nombre-recurso" name="nombre-recurso" required>
+
+                <label for="tipo-recurso">Tipo de recurso:</label>
+                <select id="tipo-recurso" name="tipo-recurso">
+                    <option value="computadora">Computadora</option>
+                    <option value="proyector">Proyector</option>
+                    <option value="impresora">Impresora</option>
+                    <option value="otro">Otro</option>
+                </select>
+
+                <label for="estado-recurso">Estado:</label>
+                <select id="estado-recurso" name="estado-recurso">
+                    <option value="disponible">Disponible</option>
+                    <option value="en_uso">En uso</option>
+                    <option value="en_reparacion">En reparación</option>
+                </select>
+
+                <button type="submit">Agregar Recurso</button>
+            </form>
+            <div id="lista-recursos">
+                <h3>Lista de Recursos</h3>
+                <ul id="recursos-lista">
+                    <!-- Recursos agregados aparecerán aquí -->
+                </ul>
+            </div>
+        </section>
+
+        <section id="usuarios">
+            <h2>Gestión de Usuarios</h2>
+            <form id="usuario-form">
+                <label for="nombre-usuario">Nombre del usuario:</label>
+                <input type="text" id="nombre-usuario" name="nombre-usuario" required>
+
+                <label for="rol-usuario">Rol:</label>
+                <select id="rol-usuario" name="rol-usuario">
+                    <option value="administrador">Administrador</option>
+                    <option value="docente">Docente</option>
+                    <option value="estudiante">Estudiante</option>
+                </select>
+
+                <button type="submit">Agregar Usuario</button>
+            </form>
+            <div id="lista-usuarios">
+                <h3>Lista de Usuarios</h3>
+                <ul id="usuarios-lista">
+                    <!-- Usuarios agregados aparecerán aquí -->
+                </ul>
+            </div>
+        </section>
+
+        <section id="reportes">
+            <h2>Generar Reportes</h2>
+            <button id="reporte-uso">Reporte de Uso de Recursos</button>
+            <button id="reporte-usuarios">Reporte de Usuarios</button>
+            <div id="resultados-reportes">
+                <!-- Resultados de reportes aparecerán aquí -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Gestión de Recursos Tecnológicos</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
