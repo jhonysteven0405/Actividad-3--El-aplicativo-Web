@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facilidad de Navegación</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Barra de navegación */
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 100;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Estilos para la barra de búsqueda */
+        .search-container {
+            position: fixed;
+            top: 10px;
+            right: 20px;
+            z-index: 100;
+        }
+
+        .search-container input {
+            padding: 5px;
+            font-size: 14px;
+        }
+
+        /* Estilo para el contenido principal */
+        .content {
+            margin-top: 50px;
+            padding: 20px;
+        }
+
+        /* Estilos para el mapa del sitio */
+        .site-map {
+            background-color: #f4f4f4;
+            padding: 20px;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .site-map ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .site-map ul li {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Barra de navegación -->
+<nav>
+    <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Servicios</a></li>
+        <li><a href="#">Sobre Nosotros</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contacto</a></li>
+    </ul>
+</nav>
+
+<!-- Barra de búsqueda -->
+<div class="search-container">
+    <input type="text" placeholder="Buscar...">
+</div>
+
+<!-- Contenido principal -->
+<div class="content">
+    <h1>Bienvenido a Nuestro Sitio Web</h1>
+    <p>Este es un sitio con navegación fácil y amigable.</p>
+
+    <!-- Mapa del sitio -->
+    <div class="site-map">
+        <h2>Mapa del Sitio</h2>
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Sobre Nosotros</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </div>
+</div>
+
+</body>
+</html>
